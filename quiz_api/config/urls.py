@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('quizzes.urls')), 
+    path('api/', include('quizzes.urls')),        # 🆕 API routes
+    path('api-auth/', include('rest_framework.urls')),  # 🆕 DRF auth UI
 ]
